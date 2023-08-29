@@ -1,0 +1,9 @@
+---
+services:
+  # TODO: Add proper service name
+  ${SERVICE_NAME}:
+    volumes:
+      # Change `./:/app` to `./${SERVICE_NAME}:/app` if
+      # you are using a global compose file
+      - ./:/app
+      - /app/node_modules/
